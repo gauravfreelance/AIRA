@@ -24,7 +24,7 @@ const ICON_SIZE = 25;
 const navlinks1 = [
   {
     title: "Hyper-automation Solution",
-    id: "has",
+    id: "hyperautomation",
   },
   {
     title: "Robotic Process automation",

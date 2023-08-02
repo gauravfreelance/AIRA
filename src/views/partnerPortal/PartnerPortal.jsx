@@ -35,7 +35,7 @@ const PartnerPortal = () => {
                   sx={{
                     mt: 23,
                     border: "1px solid #fff",
-                    color: "#6755DF",
+                    color: "#fff",
                     background:"#fff",
                     borderRadius: "8px",
                   }}
@@ -55,7 +55,7 @@ const PartnerPortal = () => {
                   sx={{
                     border: "1px solid #fff",
                     color: "#fff",
-                    background:"#6755DF",
+                    background:"#fff",
                     borderRadius: "8px",px:6
                   }}
                 >
