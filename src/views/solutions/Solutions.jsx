@@ -69,6 +69,8 @@ const ESCard = (props) => {
         backgroundColor: Colors.airaPrimary,
         userSelect: "none",
         borderRadius: "10px",
+        padding:"2rem",
+        padding:"2rem",
         cursor: "pointer",
         borderLeft: `5px solid transparent`,
         borderBottom: `5px solid transparent`,
@@ -137,7 +139,7 @@ const Solutions = () => {
                 flexGrow: 1,
               }}
             >
-              <Stack sx={{ my: 10 }}>
+<Stack sx={{ my: 10 }}>
                 <Box sx={{ width: "40%" }}>
                   <Typography variant="h4" sx={{ fontWeight: 700 }}>
                     Our{" "}
@@ -151,6 +153,49 @@ const Solutions = () => {
                     accedunt sunt communis qui.
                   </Typography>
                 </Box>
+
+                <Box sx={{ width: "40%",marginTop: "150px" }}>
+                  <Typography variant="h6" sx={{ fontWeight: 700 }}>
+                    <span style={{ color: Colors.airaSecondary }}>
+                      By Industry
+                    </span>
+                  </Typography>
+                  <Typography variant="body1" sx={{ my: 3 }}>
+                    See how you can use automation in your industry to move faster, grow more 
+                    <br />profitable, and improve both customer and employee satisfaction.
+                  </Typography>
+                </Box>
+                <Grid container gap={2} sx={{ p: 2, pl: 0 }}>
+                  {SOLUTIONSDATA.map((item, idx) => {
+                    return (
+                      <Grid item key={idx}>
+                        <ESCard
+                          {...item}
+                          onCardClick={() => {
+                            setSelectedSolutions(item);
+                            window.scrollTo({
+                              top: 0,
+                              behaviour: "smooth",
+                            });
+                          }}
+                        />
+                      </Grid>
+                    );
+                  })}
+                </Grid>
+
+                <Box sx={{ width: "40%", marginTop: "150px" }}>
+                  <Typography variant="h6" sx={{ fontWeight: 700 }}>
+                    <span style={{ color: Colors.airaSecondary }}>
+                      By Department
+                    </span>
+                  </Typography>
+                  <Typography variant="body1" sx={{ my: 3 }}>
+                    Explore the ways automation can help every department in your enterprise work
+                    smoother and smarter.
+                  </Typography>
+                </Box>
+
                 <Grid container gap={2} sx={{ p: 2, pl: 0 }}>
                   {SOLUTIONSDATA.map((item, idx) => {
                     return (

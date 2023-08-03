@@ -130,7 +130,7 @@ const FOOTERLINKS = [
       {
         id:1,
         label: "Hyper-automation Solution",
-        route: "hyper_automation_solution",
+        route: "hyperautomation",
       },
       {id:2, label: "AI/ML", route: "aiml" },
       {
